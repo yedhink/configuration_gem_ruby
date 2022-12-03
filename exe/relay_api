@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+base_path = File.expand_path("../lib", __dir__)
+
+if File.exist?(base_path)
+  require_relative "../lib/relay_api"
+else
+  require "relay_api"
+end
+
+RelayApi.configure do |config|
+  config.mcqueen.host = "mcqueen's host"
+  puts config.mcqueen.host
+	puts config.geneva.host
+end
