@@ -12,5 +12,5 @@ end
 RelayApi.configure do |config|
   config.mcqueen.host = "mcqueen's host"
   puts config.mcqueen.host
-	puts config.geneva.host
+  puts config.geneva.host
 end
